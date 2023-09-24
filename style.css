@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;600;700&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(./Images/2111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: gray; */
+    padding: 40px 0;
+}
+
+nav>.logo {
+    font-size: 38px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav>.logo span {
+    color: #0080ff;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+}
+
+nav>ul>li {
+    margin-left: 50px;
+}
+
+nav>ul>li>a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+
+nav>ul>li>a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 4px;
+    width: 0%;
+    background: #0080ff;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+nav>ul>li>a:hover:before {
+    width: 100%;
+}
+
+nav>.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 13px 25px;
+    background-color: #0080ff;
+    border-radius: 50px;
+    transition: 0.59s ease;
+    font-weight: bold;
+}
+
+nav>.btn:hover {
+    transform: scale(1.2);
+}
+
+/* nav closes */
+.Home {
+    width: 100vw;
+    height: 75vh;
+    padding: 100px 200px;
+}
+
+.Home>.content>h4 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.Home>.content>h3 {
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.Home>.content>h3>span {
+    color: #0080ff;
+}
+
+.animate-txt>h1 {
+    font-size: 60px;
+    font-family: 600;
+    min-width: 240px;
+    color: #fff;
+}
+
+.animate-txt>h1>span {
+    position: relative;
+}
+
+.animate-txt>h1>span::before {
+    content: 'Developer';
+    color: aqua;
+    animation: words 10s infinite;
+}
+
+@keyframes words {
+
+    0%,
+    30% {
+        content: 'Frontend-Developer';
+    }
+
+    31%,
+    60% {
+        content: 'UI-Developer';
+    }
+
+    61%,
+    100% {
+        content: 'Student';
+    }
+}
+
+.Home>.content>button {
+    margin-top: 20px;
+    background: #0080ff;
+    color: white;
+    padding: 10px 30px;
+    font-size: medium;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.59s ease;
+}
+
+.Home>.content>button:hover {
+    transform: scale(1.2);
+}
+
+/* home section close */
+.about {
+    padding: 100px 0;
+    width: 100vw;
+    background: url(./Images/24741.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about>.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.img-ab {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.img-ab>img {
+    cursor: pointer;
+    width: 330px;
+    height: 350px;
+    transition: 0.59s ease;
+}
+
+.img-ab>img:hover {
+    transform: scale(1.2);
+}
+
+.con-ab>h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.con-ab>h3 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.con-ab>h3>i {
+    color: #0080ff;
+}
+
+.con-ab>p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.con-ab>a {
+    text-decoration: none;
+    color: #fff;
+    background: #0080ff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-transform: capitalize;
+}
+
+/* about us closed */
+.skills {
+    min-height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-sk {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.content-sk>h1 {
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.skill-bar {
+    height: 14px;
+    background-color: #282828;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    border-radius: 3px;
+    background-color: #d13639;
+    position: relative;
+    animation: fillsbar 2s ease;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    background-color: #f1f1f1;
+    padding: 4px 6px;
+    font-size: 12px;
+    top: -30px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+@keyframes fillsbar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* skill section complete */
+#Hire-me {
+    background-color: #0e4644;
+    width: 100vw;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Hire-me>h1 {
+    font-size: 46px;
+    color: #f1f1f1;
+    margin-bottom: 25px;
+}
+
+#Hire-me>button {
+    width: 110px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.59s ease;
+}
+
+#Hire-me>button:hover {
+    transform: scale(1.2);
+}
+
+/* hire-me close */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-bottom: 1rem;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 20px;
+}
+
+footer .social-media a:hover {
+    color: #ccc;
+}
+
+footer .copyright {
+    font-size: 0.8rem;
+}
+
+.copyright>p {
+    font-size: 18px;
+}
+/* Media Queries */
